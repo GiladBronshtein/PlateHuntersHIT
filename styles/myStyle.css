@@ -1,0 +1,128 @@
+﻿body {
+    background-image: url("../images/bg.png");
+    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Assistant', sans-serif;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: block;
+}
+
+.w3-bar .w3-button {
+    padding: 10px;
+}
+
+#gameArea {
+    overflow: hidden;
+    display: block;
+    position: relative;
+    height: 96vh;
+    width: 90vw;
+    margin: 0 auto;
+    padding-top: 70px;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#gameArea>img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
+}
+
+#inputs {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: right;
+}
+
+.bg-img {
+    background-image: url("/images/gameBg.png");
+    width: 77%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 260px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
+}
+
+
+/* Add styles to the form container */
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    background-position: center;
+    background-color: white;
+    position: static;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
+}
+
+
+/* Full-width input fields */
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0 15px 0;
+    border: none;
+    background: #f1f1f1;
+    text-align: center;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Set a style for the submit button */
+
+.btn {
+    background-color: #04aa46;
+    color: white;
+    padding: 16px 2px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 1;
+}

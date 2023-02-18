@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Plate Hunters</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/script.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <!-- אודות -->
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content" style="width:50%">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topleft">X</span>
+                <div class="">
+                    <img src="/images/Picture7.png" style="width:100%">
+                </div>
+            </div>
+        </div>
+
+        <!-- איך משחקים -->
+        <div id="id02" class="w3-modal">
+            <div class="w3-modal-content" style="width:50%;text-align:center;">
+                <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topleft">X</span>
+                <div class="">
+                    <br>
+                    <span>
+                    <p> השתמשו בעכבר בכדי לירות בצלחת במידה והיא נכונה, אם לא תנו לה לעבור </p>
+                    </span>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-white w3-card" id="myNavbar">
+                <a href="index.html" class="w3-bar-item w3-button w3-wide w3-right">
+                    <img src="/images/logo.png" width="80px" height="20px">
+                </a>
+                <div class="w3-left w3-hide-small">
+                    <a href="#about" class="w3-bar-item w3-button" onclick="document.getElementById('id01').style.display='block'" class="w3-button"><i class="fa fa-info"></i>   אודות</a>
+                    <a href="#team" class="w3-bar-item w3-button" onclick="document.getElementById('id02').style.display='block'" class="w3-button"><i class="fa fa-cube"></i> ?איך משחקים</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN -->
+        <div id="gameArea">
+            <iframe id="gameIframe1" src="/Build/index.html" loading="lazy" style="display:none;">Browser not compatible.</iframe>
+            <iframe id="gameIframe2" src="/Build1/index.html" loading="lazy" style="display:none;">Browser not compatible.</iframe>
+
+            <div class="bg-img">
+                <form class="container">
+                    <label for="code"><b>הכניסו קוד: 122 או 123</b></label>
+                    <input type="text" placeholder="קוד משחק" id=code name="code" required>
+                    <button type="button" class="btn" onclick="show()">קדימה</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
